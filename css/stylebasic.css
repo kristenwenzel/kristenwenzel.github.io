@@ -1,0 +1,202 @@
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%}
+    .col-s-2 {width: 16.66%}
+    .col-s-3 {width: 25%}
+    .col-s-4 {width: 33.33%}
+    .col-s-5 {width: 41.66%}
+    .col-s-6 {width: 50%}
+    .col-s-7 {width: 58.33%}
+    .col-s-8 {width: 66.66%}
+    .col-s-9 {width: 75%}
+    .col-s-10 {width: 83.33%}
+    .col-s-11 {width: 91.66%}
+    .col-s-12 {width: 100%}
+}
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .col-1 {width: 8.33%}
+    .col-2 {width: 16.66%}
+    .col-3 {width: 25%}
+    .col-4 {width: 33.33%}
+    .col-5 {width: 41.66%}
+    .col-6 {width: 50%}
+    .col-7 {width: 58.33%}
+    .col-8 {width: 66.66%}
+    .col-9 {width: 75%}
+    .col-10 {width: 83.33%}
+    .col-11 {width: 91.66%}
+    .col-12 {width: 100%}
+}
+.menu{
+    width: 25%;
+    float: left;
+}
+.main{
+    width: 75%;
+    float: left;
+}
+.topnav {
+    background-color: #587e76;
+    overflow: hidden;
+    font-family: 'Happy Monkey';
+}
+.topnav a{
+    float: left;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #80cdc1;
+    color: green;
+}
+.topnav a.active {
+    background-color: #4CAF50;
+    color: slategray;
+}
+h1{
+    font-family: 'Bangers';
+    font-size: 100px;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Happy Monkey';
+    font-size: 25px;
+    margin-top: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+h3 {
+    font-family: 'Bangers';
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+}
+h4{
+    font-family: 'Happy Monkey';
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: #a79e84;
+    padding: 10px;
+    outline-style: solid;
+    outline-color: #587e76;
+    outline-width: 3px;
+}
+h5{
+    font-family: 'Happy Monkey';
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+    padding: 10px;
+}
+body {
+    background-color: #a96e5b;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+p {
+    font-family: 'Happy Monkey';
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #a96e5b;
+    opacity: 0.7;
+    padding: 10px;
+}
+p1 {
+    font-family: 'Happy Monkey';
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: #dac292;
+    opacity: 0.8;
+    padding: 5px;
+}
+p12 {
+    font-family: 'Happy Monkey';
+    color: black;
+    font-size: 25px;
+}
+p2, p3 {
+    font-family: 'Happy Monkey';
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+p4 {
+    font-family: 'Happy Monkey';
+    color: black;
+    font-size: 25px;
+    display: block;
+}
+p5 {
+    font-family: 'Happy Monkey';
+    color: black;
+    font-size: 15px;
+}
+p6 {
+    font-family: 'Happy Monkey';
+    color: black;
+    font-size: 15px;
+}
+li {
+    margin-left: 15px;
+}
+.accordion {
+    font-family: 'Happy Monkey';
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #a79e84;
+    color: white;
+    width: 80%;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: black;
+    margin-left: 45px;
+}
+.active, .accordion:hover {
+    background-color: #a79e84;
+}
+.panel {
+    padding: 0 18px;
+    background-color: #a79e84;
+    display: none;
+    overflow: hidden;
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 45px;
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: black;
+    text-align: justify;
+}
+.portfolio-thumbnail {
+    background-color: #fff;
+    border-color: #a79e84;
+    border-width: 4px;
+    width: 80%;
+    margin-top: 10px;
+}
+.portfolio-thumbnail:hover {
+    border-color: #a79e84;
+}
