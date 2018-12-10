@@ -33,7 +33,7 @@ map.on('load', function(){
     paint: {
       'fill-color': '#ffffff',
       'fill-outline-color': '#FF0000',
-      'fill-opacity': 0.8
+      'fill-opacity': 0.4
     }
   });
   map.addLayer({
@@ -49,7 +49,7 @@ map.on('load', function(){
     paint: {
       'fill-color': '#ffffff',
       'fill-outline-color': '#FF0000',
-      'fill-opacity': 0.8
+      'fill-opacity': 0.4
     }
   });
     map.addSource("clientPoint", {
