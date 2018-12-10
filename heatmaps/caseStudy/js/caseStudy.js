@@ -95,7 +95,7 @@ map.on('load', function(){
     "id": "flowMeter-heat",
     "type": "heatmap",
     "source": "flowMeter",
-    "maxzoom": 12,
+    "maxzoom": 16,
     "paint": {
         // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
         // Begin color ramp at 0-stop with a 0-transparancy color
@@ -125,7 +125,7 @@ map.addLayer({
   "id": "smoke-heat",
   "type": "heatmap",
   "source": "smoke",
-  "maxzoom": 9,
+  "maxzoom": 16,
   "paint": {
       // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
       // Begin color ramp at 0-stop with a 0-transparancy color
@@ -155,7 +155,7 @@ map.addLayer({
   "id": "acoustic-heat",
   "type": "heatmap",
   "source": "acoustic",
-  "maxzoom": 9,
+  "maxzoom": 16,
   "paint": {
       // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
       // Begin color ramp at 0-stop with a 0-transparancy color
