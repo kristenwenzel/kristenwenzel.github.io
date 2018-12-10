@@ -52,40 +52,6 @@ map.on('load', function(){
       'fill-opacity': 0.4
     }
   });
-  map.addSource("clientPoint", {
-    type: "geojson",
-    data: 'https://web.fulcrumapp.com/shares/df38f5edb35fb25e.geojson',
-  });
-  map.addLayer({
-    id: "Clients",
-    type: "circle",
-    source: "clientPoint",
-    layout: {
-      'visibility': 'visible',
-    },
-    paint: {
-      'circle-color': [
-        'match',
-        ['get', 'past_client'],
-        'Yes', '#000000',
-        /* other */ '#D1C7B7'
-      ],
-      "circle-radius": [
-        'match',
-        ['get', 'past_client'],
-        'Yes', 4,
-        'No', 3,
-        1
-      ],
-      "circle-opacity": [
-        'match',
-        ['get', 'past_client'],
-        'Yes', 1,
-        'No', 0.8,
-        1
-      ],
-    }
-  });  
 
   map.addSource('flowMeter', {
     "type": "geojson",
@@ -177,6 +143,40 @@ map.addLayer({
       "heatmap-opacity": 0.8
   }
 });
+    map.addSource("clientPoint", {
+    type: "geojson",
+    data: 'https://web.fulcrumapp.com/shares/df38f5edb35fb25e.geojson',
+  });
+  map.addLayer({
+    id: "Clients",
+    type: "circle",
+    source: "clientPoint",
+    layout: {
+      'visibility': 'visible',
+    },
+    paint: {
+      'circle-color': [
+        'match',
+        ['get', 'past_client'],
+        'Yes', '#000000',
+        /* other */ '#D1C7B7'
+      ],
+      "circle-radius": [
+        'match',
+        ['get', 'past_client'],
+        'Yes', 4,
+        'No', 3,
+        1
+      ],
+      "circle-opacity": [
+        'match',
+        ['get', 'past_client'],
+        'Yes', 1,
+        'No', 0.8,
+        1
+      ],
+    }
+  });  
   
   map.on('click', 'Clients', function (e) {
       var coordinates = e.features[0].geometry.coordinates.slice();
