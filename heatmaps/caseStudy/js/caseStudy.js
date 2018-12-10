@@ -161,8 +161,6 @@ map.addLayer({
         'Yes', '#000000',
         /* other */ '#D1C7B7'
       ],
-      "circle-stroke-color": "#fffff",
-      "circle-stroke-width": 1,
       "circle-radius": [
         'match',
         ['get', 'past_client'],
