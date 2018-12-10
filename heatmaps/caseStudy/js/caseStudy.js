@@ -123,7 +123,7 @@ map.addLayer({
     paint: {
       'fill-color': '#ffffff',
       'fill-outline-color': '#FF0000',
-      'fill-opacity': 1.0
+      'fill-opacity': 0.6
     }
   });
   map.addLayer({
@@ -139,7 +139,7 @@ map.addLayer({
     paint: {
       'fill-color': '#ffffff',
       'fill-outline-color': '#FF0000',
-      'fill-opacity': 1.0
+      'fill-opacity': 0.6
     }
   });
   map.addSource("clientPoint", {
