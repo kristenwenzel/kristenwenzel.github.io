@@ -13,6 +13,45 @@ var geocoder = new MapboxGeocoder({
 document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
 map.on('load', function(){
+      var point = turf.point([-93.322847, 37.141639]);
+  var buffered = turf.buffer(point, 75, {units: 'miles'});
+
+  var point2 = turf.point([-93.322847, 37.141639]);
+  var buffered2 = turf.buffer(point2, 150, {units: 'miles'});
+  
+  
+    map.addLayer({
+    id: "radius2",
+    type: "fill",
+    source: {
+      type: 'geojson',
+      data: buffered2
+    },
+    layout: {
+      "visibility": 'visible',
+    },
+    paint: {
+      'fill-color': '#ffffff',
+      'fill-outline-color': '#FF0000',
+      'fill-opacity': 1.0
+    }
+  });
+  map.addLayer({
+    id: "radius",
+    type: "fill",
+    source: {
+      type: 'geojson',
+      data: buffered
+    },
+    layout: {
+      "visibility": 'visible',
+    },
+    paint: {
+      'fill-color': '#ffffff',
+      'fill-outline-color': '#FF0000',
+      'fill-opacity': 1.0
+    }
+  });
   map.addSource('flowMeter', {
     "type": "geojson",
     "data": "https://web.fulcrumapp.com/shares/f434e2bf2b1d6b0c.geojson"
@@ -138,45 +177,7 @@ map.addLayer({
       ],
     }
   });
-    var point = turf.point([-93.322847, 37.141639]);
-  var buffered = turf.buffer(point, 75, {units: 'miles'});
-
-  var point2 = turf.point([-93.322847, 37.141639]);
-  var buffered2 = turf.buffer(point2, 150, {units: 'miles'});
   
-  
-    map.addLayer({
-    id: "radius2",
-    type: "fill",
-    source: {
-      type: 'geojson',
-      data: buffered2
-    },
-    layout: {
-      "visibility": 'visible',
-    },
-    paint: {
-      'fill-color': '#ffffff',
-      'fill-outline-color': '#FF0000',
-      'fill-opacity': 1.0
-    }
-  });
-  map.addLayer({
-    id: "radius",
-    type: "fill",
-    source: {
-      type: 'geojson',
-      data: buffered
-    },
-    layout: {
-      "visibility": 'visible',
-    },
-    paint: {
-      'fill-color': '#ffffff',
-      'fill-outline-color': '#FF0000',
-      'fill-opacity': 1.0
-    }
-  });
   map.on('click', 'Clients', function (e) {
       var coordinates = e.features[0].geometry.coordinates.slice();
       var description = "<strong>Client Name: </strong>" + e.features[0].properties.client_name
