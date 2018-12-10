@@ -114,7 +114,7 @@ map.on('load', function(){
         // Adjust the heatmap radius by zoom level
         "heatmap-radius": 10,
         // Transition from heatmap to circle layer by zoom level
-        "heatmap-opacity": 1.0
+        "heatmap-opacity": 0.8
     }
 });
 map.addSource('smoke', {
@@ -144,7 +144,7 @@ map.addLayer({
       // Adjust the heatmap radius by zoom level
       "heatmap-radius": 10,
       // Transition from heatmap to circle layer by zoom level
-      "heatmap-opacity": 1.0
+      "heatmap-opacity": 0.8
   }
 });
 map.addSource('acoustic', {
@@ -174,7 +174,7 @@ map.addLayer({
       // Adjust the heatmap radius by zoom level
       "heatmap-radius": 10,
       // Transition from heatmap to circle layer by zoom level
-      "heatmap-opacity": 0.7
+      "heatmap-opacity": 0.8
   }
 });
   
