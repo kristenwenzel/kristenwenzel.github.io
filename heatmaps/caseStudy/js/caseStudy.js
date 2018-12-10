@@ -31,7 +31,7 @@ map.on('load', function(){
       "visibility": 'visible',
     },
     paint: {
-      'fill-color': '#ffffff',
+      'fill-color': 'rgba(33,102,172,0)',
       'fill-outline-color': '#FF0000',
       'fill-opacity': 0.4
     }
@@ -47,7 +47,7 @@ map.on('load', function(){
       "visibility": 'visible',
     },
     paint: {
-      'fill-color': '#ffffff',
+      'fill-color': 'rgba(33,102,172,0)',
       'fill-outline-color': '#FF0000',
       'fill-opacity': 0.4
     }
