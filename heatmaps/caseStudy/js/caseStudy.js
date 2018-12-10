@@ -68,13 +68,13 @@ map.on('load', function(){
         'match',
         ['get', 'past_client'],
         'Yes', '#000000',
-        /* other */ '#ccc'
+        /* other */ '#D1C7B7'
       ],
       "circle-radius": [
         'match',
         ['get', 'past_client'],
-        'Yes', 3,
-        'No', 2,
+        'Yes', 4,
+        'No', 3,
         1
       ],
       "circle-opacity": [
