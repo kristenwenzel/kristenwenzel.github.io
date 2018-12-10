@@ -33,7 +33,7 @@ map.on('load', function(){
     paint: {
       'fill-color': 'rgba(33,102,172,0)',
       'fill-outline-color': '#FF0000',
-      'fill-opacity': 0.4
+      'fill-opacity': 1.0
     }
   });
   map.addLayer({
@@ -49,7 +49,7 @@ map.on('load', function(){
     paint: {
       'fill-color': 'rgba(33,102,172,0)',
       'fill-outline-color': '#FF0000',
-      'fill-opacity': 0.4
+      'fill-opacity': 1.0
     }
   });
 
