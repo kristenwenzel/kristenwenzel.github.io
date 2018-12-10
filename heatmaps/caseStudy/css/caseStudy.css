@@ -1,0 +1,42 @@
+/* KWENZEL, 2018 */
+
+body {
+    padding-top: 0px;
+    -webkit-padding-before: 0px;
+	overflow: hidden;
+}
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.bg-custom-darkblue {
+    background-color: #0056b3;
+}
+#map {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.card {
+  z-index: 1;
+  top: 500px;
+  width: 180px;
+  margin-left: 10px;
+}
+.card-body {
+  padding: 10px;
+}
+.geocoder {
+    position:absolute;
+    z-index:1;
+    width:25%;
+    left:27%;
+    margin-left:-25%;
+    top:60px;
+}
+.mapboxgl-ctrl-geocoder { min-width:100%; }
