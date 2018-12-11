@@ -41,7 +41,7 @@
     float: left;
 }
 .topnav {
-    background-color: #587e76;
+    background-color: #9395A3;
     overflow: hidden;
     font-family: 'Happy Monkey';
 }
@@ -55,11 +55,11 @@
     font-size: 17px;
 }
 .topnav a:hover {
-    background-color: #80cdc1;
+    background-color: #9395A3;
     color: green;
 }
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #9395A3;
     color: slategray;
 }
 h1{
@@ -85,7 +85,7 @@ h4{
     font-weight: bold;
     font-size: 30px;
     color: white;
-    background-color: #a79e84;
+    background-color: #9395A3;
     padding: 10px;
     outline-style: solid;
     outline-color: #587e76;
@@ -99,7 +99,7 @@ h5{
     padding: 10px;
 }
 body {
-    background-color: #a96e5b;
+    background-color: #F1B903;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -160,7 +160,7 @@ li {
     font-family: 'Happy Monkey';
     font-size: 17px;
     font-weight: bold;
-    background-color: #a79e84;
+    background-color: #9395A3;
     color: white;
     width: 80%;
     cursor: pointer;
@@ -175,11 +175,11 @@ li {
     margin-left: 45px;
 }
 .active, .accordion:hover {
-    background-color: #a79e84;
+    background-color: #9395A3;
 }
 .panel {
     padding: 0 18px;
-    background-color: #a79e84;
+    background-color: #9395A3;
     display: none;
     overflow: hidden;
     width: 80%;
