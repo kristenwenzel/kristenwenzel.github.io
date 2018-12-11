@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <!-- Font Awesome 5 -->
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>    <!--bootstrap 4-->
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+    <script src='https://unpkg.com/simple-statistics@6.1.0/dist/simple-statistics.min.js'></script>
+    <link rel='stylesheet' href="css/project3_style.css">
+    <link rel='stylesheet' href="css/project3.css">
+</head>
+<header>
+  <nav class="navbarnavbar-dark navbar-expand-sm fixed-top" id="header1">
+    <div class="container-fluid">
+        <div class="h5 font-weight-dark text-black mt-2" id="appTitle">TREKK Service Areas</div>
+    </div>
+</nav>
+</header>
+<!-- MAIN -->
+<main role="main">
+    <div id="mydiv">
+    <!-- MAP PAGE -->
+    <div class="container-fluid fadeIn" id="mainContainer">
+        <div class="row" id="rowParent">
+            <div class="col-12 m-0 p-0">
+              <div style="z-index: 2" class="card" style="width: 8rem;">
+                <div class="card-body">
+                  <div class="card-title"></div>
+                  <p style="font-size: 10pt;"><i style="color:#FFB903;" class="fas fa-chevron-circle-up"></i> TREKK PreView Studies</p>
+                  <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Learn More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Manhole Inspections</a>
+                      <a target="_blank" class="dropdown-item" href="smokeTesting.html">Smoke Testing</a>
+                      <a class="dropdown-item" href="caseStudy.html">Case Study</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- MAP -->
+            <div id='map' style="z-index: 1"></div>
+          </div>
+            </div>
+            </div>
+          </div>
+        </div>
+</main>
+    <!-- MAP PAGE -->
+
+<!-- FOOTER -->
+<footer class="navbar footer navbar-expand-sm mb-0 fixed-bottom" id="footer">
+    <p class="navbar-nav ml-auto text-dark font-weight-light" id="footerText"><strong>© Kristen Wenzel | 2018</strong></p>
+</footer>
+<!-- FOOTER -->
+
+<!-- device size tester -->
+<div id="device-size-detector">
+    <div id="xs" class="d-block d-sm-none"></div>
+    <div id="sm" class="d-none d-sm-block d-md-none"></div>
+    <div id="md" class="d-none d-md-block d-lg-none"></div>
+    <div id="lg" class="d-none d-lg-block d-xl-none"></div>
+    <div id="xl" class="d-none d-xl-block"></div>
+</div>
+<!-- device size tester -->
+
+<!--Jquery-->
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<!--bootstap 4 scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<!-- material design bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+<script src="js/project3.js"></script>
+</html>
