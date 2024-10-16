@@ -75,21 +75,20 @@ h2{
     text-align: center;
 }
 h3 {
-    font-family: 'Bangers';
-    font-weight: bold;
+    font-family: 'Courier New';
     font-size: 100px;
     text-align: center;
 }
 h4{
     font-family: 'Happy Monkey';
     font-weight: bold;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
     background-color: #9395A3;
     padding: 10px;
-    outline-style: solid;
-    outline-color: #587e76;
-    outline-width: 3px;
+    outline-style: dashed;
+    outline-color: #ffffff;
+    outline-width: 0.5px;
 }
 h5{
     font-family: 'Happy Monkey';
@@ -98,8 +97,19 @@ h5{
     color: black;
     padding: 10px;
 }
+h6{
+    font-family: 'Courier New';
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    outline-style: dashed;
+    outline-color: #ffffff;
+    outline-width: 0.5px;
+}
 body {
-    background-color: #F1B903;
+    background-color: #558d5b;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -116,45 +126,9 @@ p {
     opacity: 0.7;
     padding: 10px;
 }
-p1 {
-    font-family: 'Happy Monkey';
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    font-size: 10px;
-    background-color: #dac292;
-    opacity: 0.8;
-    padding: 5px;
-}
-p12 {
-    font-family: 'Happy Monkey';
-    color: black;
-    font-size: 25px;
-}
-p2, p3 {
-    font-family: 'Happy Monkey';
-    text-align: center;
-    color: #000;
-    font-weight: bold;
-}
-p4 {
-    font-family: 'Happy Monkey';
-    color: black;
-    font-size: 25px;
-    display: block;
-}
-p5 {
-    font-family: 'Happy Monkey';
-    color: black;
-    font-size: 15px;
-}
-p6 {
-    font-family: 'Happy Monkey';
-    color: black;
-    font-size: 15px;
-}
 li {
     margin-left: 15px;
+    font-family: 'Happy Monkey';
 }
 .accordion {
     font-family: 'Happy Monkey';
@@ -199,4 +173,12 @@ li {
 }
 .portfolio-thumbnail:hover {
     border-color: #a79e84;
+}
+a:active {
+    font-family: 'Happy Monkey';
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #9395A3;
+    color: white;
+    width: 80%;
 }
